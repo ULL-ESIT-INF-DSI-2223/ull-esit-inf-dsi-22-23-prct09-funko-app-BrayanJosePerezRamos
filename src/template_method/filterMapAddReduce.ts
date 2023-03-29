@@ -14,18 +14,22 @@ export class FilterMapAddReduce extends FilterMapReduce {
     return reduced;
   }
 
-  protected afterInitialisation():void {
+  protected afterInitialisation(): number[] {
     console.log("FilterMapAddReduce: after initialisation");
+    return this.list;
   }
-  protected afterfilter(): void {
+  protected afterfilter(): number[] {
     console.log("FilterMapAddReduce: after filter");
+    return this.list;
   }
 
-  protected afterMap(): void {
+  protected afterMap(): number[] {
     console.log("FilterMapAddReduce: after map");
+    return this.list;
   }
 
-  protected afterReduce(): void {
+  protected afterReduce(): number[] {
     console.log("FilterMapAddReduce: after reduce");
+    return this.list;
   }
 }
