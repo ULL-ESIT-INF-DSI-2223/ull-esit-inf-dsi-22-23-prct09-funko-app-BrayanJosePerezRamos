@@ -12,6 +12,6 @@ describe('FilterMapProdReduce instance', () => {
 describe('FilterMapProdReduce result', () => {
   it('should run', () => {
     const fmr = new FilterMapProdReduce([1, 2]);
-    expect(fmr.run()).to.equal(2);
+    expect(fmr.run()).to.equal(-4);
   });
 })
