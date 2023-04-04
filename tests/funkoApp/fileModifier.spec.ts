@@ -82,7 +82,7 @@ describe('FileModifier getPathFromId empty', () => {
 describe('FileModifier listFunkos', () => {
   it('should return an array with the funko ids', () => {
     const result = FileModifier.listFunkos('testUser');
-    expect(result).to.eql([1]);
+    expect(result).to.eql([`funko1.json`]);
   });
 });
 
