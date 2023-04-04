@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "funki",
+  "description": "nuevofunko",
+  "type": "POP!",
+  "genre": "Series",
+  "franchise": "Marvel",
+  "franchiseId": 2,
+  "exclusive": false,
+  "specialCaracteristics": "Luz",
+  "value": 100
+}

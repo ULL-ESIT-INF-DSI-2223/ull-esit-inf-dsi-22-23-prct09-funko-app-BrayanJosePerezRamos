@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for filterMapSubReduce.ts</title>
+    <title>Code coverage report for template_method/filterMapProdReduce.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> filterMapSubReduce.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">template_method</a> filterMapProdReduce.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">53.12% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>32/32</span>
+                <span class='fraction'>17/32</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>1/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">53.12% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>32/32</span>
+                <span class='fraction'>17/32</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -98,64 +98,64 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { FilterMapReduce } from "./filterMapReduce.js";
 &nbsp;
-export class FilterMapSubReduce extends FilterMapReduce {
+export class FilterMapProdReduce extends FilterMapReduce {
   constructor (list: number[]) {
     super(list);
   }
 &nbsp;
-  protected reduce(): number {
-    let reduced = 0;
-    for (let i = 0; i &lt; this.list.length; i++) {
-      reduced -= this.list[i];
-    }
-    this.setlist([reduced]);
-    return reduced;
-  }
+  protected <span class="fstat-no" title="function not covered" >reduce(): number {</span>
+<span class="cstat-no" title="statement not covered" >    let reduced = 1;</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; this.list.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      reduced *= this.list[i];</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    this.setlist([reduced]);</span>
+<span class="cstat-no" title="statement not covered" >    return reduced;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-  protected afterInitialisation(): void {
-    console.log("FilterMapSubReduce: after initialisation");
-  }
+  protected <span class="fstat-no" title="function not covered" >afterInitialisation(): void {</span>
+<span class="cstat-no" title="statement not covered" >    console.log("FilterMapProdReduce: after initialisation");</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-  protected afterfilter(): void {
-    console.log("FilterMapSubReduce: after filter");
-  }
+  protected <span class="fstat-no" title="function not covered" >afterfilter(): void {</span>
+<span class="cstat-no" title="statement not covered" >    console.log("FilterMapProdReduce: after filter");</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-  protected afterMap(): void {
-    console.log("FilterMapSubReduce: after map");
-  }
+  protected <span class="fstat-no" title="function not covered" >afterMap(): void {</span>
+<span class="cstat-no" title="statement not covered" >    console.log("FilterMapProdReduce: after map");</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-  protected afterReduce(): void {
-    console.log("FilterMapSubReduce: after reduce");
-  }
+  protected <span class="fstat-no" title="function not covered" >afterReduce(): void {</span>
+<span class="cstat-no" title="statement not covered" >    console.log("FilterMapProdReduce: after reduce");</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -163,16 +163,16 @@ export class FilterMapSubReduce extends FilterMapReduce {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-29T10:18:26.786Z
+                at 2023-04-02T15:52:34.310Z
             </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     

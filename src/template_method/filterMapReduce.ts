@@ -31,11 +31,11 @@ export abstract class FilterMapReduce {
     // hook
     this.afterInitialisation();
     // filter
-    this.filter((n) => n % 2 === 0);
+    this.filter();
     // hook
     this.afterfilter();
     // map
-    this.Map((n) => n * n);
+    this.Map();
     // hook
     this.afterMap();
     // reduce

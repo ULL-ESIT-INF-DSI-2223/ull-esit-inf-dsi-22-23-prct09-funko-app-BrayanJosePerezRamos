@@ -1,0 +1,12 @@
+{
+  "id": 4,
+  "name": "funko locura",
+  "description": "Nuevo funko locura",
+  "type": "POP!",
+  "genre": "Series",
+  "franchise": "Marvel",
+  "franchiseId": 2,
+  "exclusive": false,
+  "specialCaracteristics": "Luz",
+  "value": 30
+}
